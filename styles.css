@@ -1,0 +1,47 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #312f2f;
+}
+
+#main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #dfd0d0;
+    border-radius: 20px ;
+    
+    
+}
+
+#CalcApp form input {
+    border: 0;
+    outline: 0;
+    width: 60px; /* To make it into a square shape */
+    height: 60px;
+    border-radius: 8px;
+    background: transparent;
+    font-size: 20px;
+    cursor: pointer;
+    margin: 10px; /* Make a space between all the buttons */
+    box-shadow: -9px -5px 15px rgba(200, 200, 200, 0.2), 8px 8px 20px rgba(1, 1, 1, 0.2) inset;
+    
+}
+
+form #CalcScreen {
+    display: flex;
+    justify-content: flex-end; /* To ensure that the content is on the far right side */
+    margin: 20px 0;
+    
+}
+
+form #CalcScreen input {
+    text-align: right;
+    flex: 1; /* full width */
+    font-size: 50px;
+    
+}

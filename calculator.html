@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator App</title>
+    <link rel="stylesheet" href="./styles.css">
+    <script type="text/javascript" src="script.js"></script>
+</head>
+<body>
+    <div id="main">
+        <div id="CalcApp">
+            <form>
+                <div id="CalcScreen">
+                    <input type="text" name="CalcScreen" id="CalcScreens" readonly>
+                </div>
+                <div>
+                    <input type="button" value="AC" onclick="CalcScreen.value = ''">
+                    <input type="button" value="DEL" onclick="CalcScreen.value = CalcScreen.value.slice(0,-1)">
+                    <input type="button" value="." onclick="CalcScreen.value += '.'">
+                    <input type="button" value="/" onclick="CalcScreen.value += '/'">
+                </div>
+                <div>
+                    <input type="button" value="7" onclick="CalcScreen.value += '7'">
+                    <input type="button" value="8" onclick="CalcScreen.value += '8'">
+                    <input type="button" value="9" onclick="CalcScreen.value += '9'">
+                    <input type="button" value="*" onclick="CalcScreen.value += '*'">
+                </div>
+                <div>
+                    <input type="button" value="4" onclick="CalcScreen.value += '4'">
+                    <input type="button" value="5" onclick="CalcScreen.value += '5'">
+                    <input type="button" value="6" onclick="CalcScreen.value += '6'">
+                    <input type="button" value="-" onclick="CalcScreen.value += '-'">
+                </div>
+                <div>
+                    <input type="button" value="1" onclick="CalcScreen.value += '1'">
+                    <input type="button" value="2" onclick="CalcScreen.value += '2'">
+                    <input type="button" value="3" onclick="CalcScreen.value += '3'">
+                    <input type="button" value="+" onclick="CalcScreen.value += '+'">
+                </div>
+                <div>
+                    <input type="button" value="00" onclick="CalcScreen.value += '00'">
+                    <input type="button" value="0" onclick="CalcScreen.value += '0'">
+                    <input type="button" value="=" onclick="evaluates(CalcScreen.value)">
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
